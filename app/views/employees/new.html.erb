@@ -1,0 +1,27 @@
+
+<%= form_for :employee , :url => { :action => :create } do |f| %>
+
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name%>
+  </p>
+
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </p>
+   <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+ 
+  <p>
+    <%= f.label :cuit %><br>
+    <%= f.text_field :cuit %>
+  </p>
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

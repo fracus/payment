@@ -1,0 +1,31 @@
+
+<%= form_for :timeRecord , :url => { :action => :create } do |f| %>
+
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date%>
+  </p>
+
+  <p>
+    <%= f.label :total_hs %><br>
+    <%= f.text_field :total_hs %>
+  </p>
+   <p>
+    <%= f.label :price_hs %><br>
+    <%= f.text_field :price_hs %>
+  </p>
+ 
+  
+  <div class="field">
+    <%= f.label :employee_id, 'Empleado' %>
+    <%= f.select_yag :employee_id, employee_options %>
+  </div>
+  <p>
+    <%= f.label :category_id, 'Categoria' %>
+    <%= f.select :category_id, category_options %>
+  </p>
+   
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

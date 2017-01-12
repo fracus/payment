@@ -1,0 +1,21 @@
+<h1>Time Records</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Horas</th>
+    <th>Precio x Hs</th>
+    <th>Empleado</th>
+    <th>Categoria</th>      
+  </tr>
+
+  <% @timeRecords.each do |timeRecord| %>
+    <tr>
+      <td><%= timeRecord.date %></td>
+      <td><%= timeRecord.total_hs%></td>
+      <td><%= timeRecord.price_hs %></td>
+      <td><%= timeRecord.employee_id%></td>
+      <td><%= timeRecord.category_id%></td>
+    </tr>
+  <% end %>
+</table>

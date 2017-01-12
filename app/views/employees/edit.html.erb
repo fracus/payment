@@ -1,0 +1,27 @@
+<p>
+  <strong>Editar Empleado</strong>
+</p>
+
+<%= form_for(@employee) do |f| %>
+      
+      <p>
+     <%= f.label :first_name%>
+      <%= f.text_field :first_name, class: 'form-control' %>
+     </p>
+     <p>
+      <%= f.label :last_name %>
+      <%= f.text_field  :last_name, class: 'form-control' %>
+    .</p>
+      <p>
+      <%= f.label :address %>
+      <%= f.text_field  :address, class: 'form-control' %>
+     </p>
+     <p>
+      <%= f.label :cuit%>
+      <%= f.text_field :cuit, class: 'form-control' %>
+    </p>
+    <br>
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
+      
+    <% end %>
+ 

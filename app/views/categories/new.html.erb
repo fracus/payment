@@ -1,0 +1,18 @@
+
+<%= form_for :category, :url => { :action => :create } do |f| %>
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name%>
+  </p>
+
+  <p>
+    <%= f.label :price_hs %><br>
+    <%= f.text_field :price_hs %>
+  </p>
+   
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
