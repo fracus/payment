@@ -1,6 +1,6 @@
-<h1>Lista de Empleados</h1>
+<center><h1>Lista de Empleados</h1></center>
 
-<table>
+<table class="table table-bordered">
   <tr>
     <th>Nombre</th>
     <th>Apellido</th>
@@ -14,10 +14,11 @@
       <td><%= employee.last_name%></td>
       <td><%= employee.address %></td>
       <td><%= employee.cuit%></td>
-      <td><%= link_to 'Show', employee %></td>
+      <td ><%= link_to 'Show', employee %></td>
       <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
       
     </tr>
 
   <% end %>
 </table>
+

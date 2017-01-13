@@ -1,27 +1,38 @@
 
-<%= form_for :employee , :url => { :action => :create } do |f| %>
 
-  <p>
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name%>
-  </p>
 
-  <p>
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </p>
-   <p>
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </p>
- 
-  <p>
-    <%= f.label :cuit %><br>
-    <%= f.text_field :cuit %>
-  </p>
- 
- 
-  <p>
-    <%= f.submit %>
-  </p>
+<div class="panel panel-default">
+<div class="panel-heading">
+  
+    <h3>New Employee </h3>
+</div>
+  <br><br>
+
+<%= form_for :employee , :html => {:class => "form"} , :url => { :action => :create } do |f| %>
+  <div class="form-group">
+  
+    <%= f.label :first_name , class: "col-md-4 control-label" %>
+    
+    <%= f.text_field :first_name , class: "form-control input-md"%>
+    
+  </div> 
+  <div class="form-group"> 
+    <%= f.label :last_name , class: "col-md-4 control-label" %>
+    <%= f.text_field :last_name , class: "form-control input-md" %>
+  </div> 
+  <div class="form-group">
+    <%= f.label :address , class: "col-md-4 control-label" %>
+    <%= f.text_field :address , class: "form-control input-md"%>
+  </div>  
+  <div class="form-group">
+    <%= f.label :cuit , class: "col-md-4 control-label"%>
+    <%= f.text_field :cuit, class: "form-control input-md" %>
+  </div>
+  
+ <center>   
+    <%= f.submit :class => 'btn btn-primary' %>
+ </center>
+ <br>
+
 <% end %>
+</div>

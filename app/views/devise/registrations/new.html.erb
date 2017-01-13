@@ -1,5 +1,13 @@
-<h2>Sign up</h2>
 
+<div class="pen-title">
+  <h1>Sign up</h1>
+</div>
+
+<div class="module form-module">
+  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+    
+  </div>
+<div class="form">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
@@ -27,3 +35,5 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+ </div>
